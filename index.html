@@ -3,217 +3,92 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>PakMart - Premium Online Store</title>
-<script src="https://cdn.tailwindcss.com"></script>
+<title>PakMart - Quality You Trust</title>
+
+<link rel="stylesheet" href="style.css">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 </head>
 
-<body class="bg-gray-50">
+<body>
+
+<!-- Top Bar -->
+<div class="top-bar">
+    Free Delivery on Orders Over Rs. 2999
+</div>
 
 <!-- Navbar -->
-<nav class="bg-white shadow-sm sticky top-0 z-50">
-<div class="max-w-7xl mx-auto px-6 py-4 flex justify-between items-center">
+<header>
+    <div class="logo">
+        <span class="pak">Pak</span><span class="mart">Mart</span>
+    </div>
 
-<h1 class="text-4xl font-bold">
-<span class="text-blue-900">Pak</span><span class="text-blue-500">Mart</span>
-</h1>
+    <nav>
+        <a href="#">Home</a>
+        <a href="#">Shop</a>
+        <a href="#">Categories</a>
+        <a href="#">Deals</a>
+        <a href="#">Contact</a>
+    </nav>
 
-<div class="hidden md:flex gap-8 text-gray-700 font-medium">
-<a href="#">Home</a>
-<a href="#">Shop</a>
-<a href="#">Categories</a>
-<a href="#">Contact</a>
-</div>
+    <div class="search-box">
+        <input type="text" placeholder="Search products...">
+    </div>
+</header>
 
-<div class="flex gap-3">
-<input
-type="text"
-placeholder="Search products..."
-class="border rounded-xl px-4 py-2 w-56"
->
-<button class="bg-blue-600 text-white px-5 py-2 rounded-xl">
-🛒 Cart
-</button>
-</div>
+<!-- Hero -->
+<section class="hero">
+    <div class="hero-content">
+        <h1>Everything You Need,<br>In One Place</h1>
+        <p>
+            Shop groceries, electronics, fashion and home essentials.
+        </p>
 
-</div>
-</nav>
-
-<!-- Hero Section -->
-<section class="bg-gradient-to-r from-blue-50 to-white py-24">
-<div class="max-w-7xl mx-auto px-6 grid md:grid-cols-2 gap-10 items-center">
-
-<div>
-<h2 class="text-6xl font-bold text-gray-900 leading-tight">
-Shop Smart With
-<span class="text-blue-600">PakMart</span>
-</h2>
-
-<p class="text-gray-600 mt-6 text-lg">
-Find groceries, electronics, fashion, beauty products and home essentials at the best prices.
-</p>
-
-<div class="mt-8 flex gap-4">
-<button class="bg-blue-600 text-white px-8 py-4 rounded-xl">
-Shop Now
-</button>
-
-<button class="border border-blue-600 text-blue-600 px-8 py-4 rounded-xl">
-Learn More
-</button>
-</div>
-</div>
-
-<div>
-<img src="https://images.unsplash.com/photo-1607082348824-0a96f2a4b9da?w=800"
-class="rounded-3xl shadow-xl">
-</div>
-
-</div>
+        <button>Shop Now</button>
+    </div>
 </section>
 
 <!-- Categories -->
-<section class="max-w-7xl mx-auto py-20 px-6">
+<section class="categories">
+    <h2>Popular Categories</h2>
 
-<h2 class="text-4xl font-bold text-center mb-12">
-Popular Categories
-</h2>
-
-<div class="grid grid-cols-2 md:grid-cols-4 gap-6">
-
-<div class="bg-white p-8 rounded-3xl shadow text-center">
-📱
-<h3 class="font-bold mt-3">Electronics</h3>
-</div>
-
-<div class="bg-white p-8 rounded-3xl shadow text-center">
-🥬
-<h3 class="font-bold mt-3">Groceries</h3>
-</div>
-
-<div class="bg-white p-8 rounded-3xl shadow text-center">
-👕
-<h3 class="font-bold mt-3">Fashion</h3>
-</div>
-
-<div class="bg-white p-8 rounded-3xl shadow text-center">
-🏠
-<h3 class="font-bold mt-3">Home</h3>
-</div>
-
-</div>
-
+    <div class="category-grid">
+        <div class="card">🥬 Groceries</div>
+        <div class="card">📱 Electronics</div>
+        <div class="card">👕 Fashion</div>
+        <div class="card">🏠 Home & Living</div>
+    </div>
 </section>
 
-<!-- Featured Products -->
-<section class="max-w-7xl mx-auto py-10 px-6">
+<!-- Products -->
+<section class="products">
+    <h2>Best Selling Products</h2>
 
-<h2 class="text-4xl font-bold mb-10">
-Featured Products
-</h2>
+    <div class="product-grid">
 
-<div class="grid md:grid-cols-4 gap-8">
+        <div class="product-card">
+            <img src="https://picsum.photos/300?1">
+            <h3>Premium Rice</h3>
+            <p>Rs. 2450</p>
+            <button>Add To Cart</button>
+        </div>
 
-<div class="bg-white rounded-3xl shadow hover:shadow-xl transition p-4">
-<img src="https://picsum.photos/300?1" class="rounded-2xl">
-<h3 class="font-bold text-lg mt-4">Smart Watch</h3>
-<p class="text-blue-600 font-bold text-xl">Rs. 4,500</p>
-<button class="w-full mt-4 bg-blue-600 text-white py-3 rounded-xl">
-Add To Cart
-</button>
-</div>
+        <div class="product-card">
+            <img src="https://picsum.photos/300?2">
+            <h3>Cooking Oil</h3>
+            <p>Rs. 1850</p>
+            <button>Add To Cart</button>
+        </div>
 
-<div class="bg-white rounded-3xl shadow hover:shadow-xl transition p-4">
-<img src="https://picsum.photos/300?2" class="rounded-2xl">
-<h3 class="font-bold text-lg mt-4">Headphones</h3>
-<p class="text-blue-600 font-bold text-xl">Rs. 2,200</p>
-<button class="w-full mt-4 bg-blue-600 text-white py-3 rounded-xl">
-Add To Cart
-</button>
-</div>
-
-<div class="bg-white rounded-3xl shadow hover:shadow-xl transition p-4">
-<img src="https://picsum.photos/300?3" class="rounded-2xl">
-<h3 class="font-bold text-lg mt-4">Rice Bag</h3>
-<p class="text-blue-600 font-bold text-xl">Rs. 2,500</p>
-<button class="w-full mt-4 bg-blue-600 text-white py-3 rounded-xl">
-Add To Cart
-</button>
-</div>
-
-<div class="bg-white rounded-3xl shadow hover:shadow-xl transition p-4">
-<img src="https://picsum.photos/300?4" class="rounded-2xl">
-<h3 class="font-bold text-lg mt-4">T-Shirt</h3>
-<p class="text-blue-600 font-bold text-xl">Rs. 1,200</p>
-<button class="w-full mt-4 bg-blue-600 text-white py-3 rounded-xl">
-Add To Cart
-</button>
-</div>
-
-</div>
-
+    </div>
 </section>
 
-<!-- Why Choose Us -->
-<section class="bg-white py-20 mt-16">
-
-<div class="max-w-7xl mx-auto px-6">
-
-<h2 class="text-4xl font-bold text-center mb-12">
-Why Choose PakMart?
-</h2>
-
-<div class="grid md:grid-cols-3 gap-8">
-
-<div class="text-center">
-🚚
-<h3 class="font-bold text-xl mt-4">Fast Delivery</h3>
-<p class="text-gray-600 mt-2">
-Quick delivery across Pakistan.
-</p>
-</div>
-
-<div class="text-center">
-🔒
-<h3 class="font-bold text-xl mt-4">Secure Shopping</h3>
-<p class="text-gray-600 mt-2">
-Safe and trusted shopping experience.
-</p>
-</div>
-
-<div class="text-center">
-⭐
-<h3 class="font-bold text-xl mt-4">Quality Products</h3>
-<p class="text-gray-600 mt-2">
-Carefully selected premium products.
-</p>
-</div>
-
-</div>
-
-</div>
-
-</section>
-
-<!-- Footer -->
-<footer class="bg-blue-900 text-white py-10 mt-16">
-
-<div class="max-w-7xl mx-auto px-6 text-center">
-
-<h3 class="text-3xl font-bold">
-PakMart
-</h3>
-
-<p class="mt-4 text-blue-100">
-Your trusted online shopping destination.
-</p>
-
-<p class="mt-6 text-sm">
-© 2026 PakMart. All Rights Reserved.
-</p>
-
-</div>
-
+<footer>
+    <h3>PakMart</h3>
+    <p>Quality You Trust, Service You Deserve.</p>
 </footer>
+
+<script src="script.js"></script>
 
 </body>
 </html>
