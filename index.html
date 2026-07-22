@@ -3,92 +3,168 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>PakMart - Quality You Trust</title>
+<title>PakMart</title>
 
-<link rel="stylesheet" href="style.css">
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+<style>
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:Arial,sans-serif;
+}
+
+body{
+background:#f8faf8;
+}
+
+nav{
+background:white;
+padding:15px 40px;
+display:flex;
+justify-content:space-between;
+align-items:center;
+box-shadow:0 2px 10px rgba(0,0,0,0.1);
+}
+
+.logo{
+font-size:32px;
+font-weight:bold;
+}
+
+.logo span:first-child{
+color:#1f7a5c;
+}
+
+.logo span:last-child{
+color:#4f9da6;
+}
+
+.hero{
+text-align:center;
+padding:80px 20px;
+background:linear-gradient(to right,#eaf7f0,#ffffff);
+}
+
+.hero h1{
+font-size:50px;
+color:#1f2937;
+margin-bottom:15px;
+}
+
+.hero p{
+font-size:18px;
+color:#555;
+margin-bottom:20px;
+}
+
+.btn{
+background:#1f7a5c;
+color:white;
+padding:12px 25px;
+border:none;
+border-radius:8px;
+cursor:pointer;
+}
+
+.section{
+padding:50px 8%;
+}
+
+.section h2{
+margin-bottom:20px;
+}
+
+.products{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+gap:20px;
+}
+
+.card{
+background:white;
+border-radius:15px;
+padding:15px;
+box-shadow:0 2px 10px rgba(0,0,0,.08);
+text-align:center;
+}
+
+.card img{
+width:100%;
+border-radius:10px;
+}
+
+.price{
+color:#1f7a5c;
+font-size:22px;
+font-weight:bold;
+margin:10px 0;
+}
+
+footer{
+background:#1f7a5c;
+color:white;
+text-align:center;
+padding:20px;
+margin-top:40px;
+}
+</style>
 </head>
 
 <body>
 
-<!-- Top Bar -->
-<div class="top-bar">
-    Free Delivery on Orders Over Rs. 2999
+<nav>
+<div class="logo">
+<span>Pak</span><span>Mart</span>
 </div>
 
-<!-- Navbar -->
-<header>
-    <div class="logo">
-        <span class="pak">Pak</span><span class="mart">Mart</span>
-    </div>
+<div>🛒 Cart (0)</div>
+</nav>
 
-    <nav>
-        <a href="#">Home</a>
-        <a href="#">Shop</a>
-        <a href="#">Categories</a>
-        <a href="#">Deals</a>
-        <a href="#">Contact</a>
-    </nav>
-
-    <div class="search-box">
-        <input type="text" placeholder="Search products...">
-    </div>
-</header>
-
-<!-- Hero -->
 <section class="hero">
-    <div class="hero-content">
-        <h1>Everything You Need,<br>In One Place</h1>
-        <p>
-            Shop groceries, electronics, fashion and home essentials.
-        </p>
-
-        <button>Shop Now</button>
-    </div>
+<h1>Everything You Need,<br>In One Place</h1>
+<p>Groceries, Electronics, Fashion & Home Essentials</p>
+<button class="btn">Shop Now</button>
 </section>
 
-<!-- Categories -->
-<section class="categories">
-    <h2>Popular Categories</h2>
+<section class="section">
+<h2>Best Selling Products</h2>
 
-    <div class="category-grid">
-        <div class="card">🥬 Groceries</div>
-        <div class="card">📱 Electronics</div>
-        <div class="card">👕 Fashion</div>
-        <div class="card">🏠 Home & Living</div>
-    </div>
-</section>
+<div class="products">
 
-<!-- Products -->
-<section class="products">
-    <h2>Best Selling Products</h2>
+<div class="card">
+<img src="https://picsum.photos/300?1">
+<h3>Premium Rice</h3>
+<p class="price">Rs. 2450</p>
+<button class="btn">Add To Cart</button>
+</div>
 
-    <div class="product-grid">
+<div class="card">
+<img src="https://picsum.photos/300?2">
+<h3>Cooking Oil</h3>
+<p class="price">Rs. 1850</p>
+<button class="btn">Add To Cart</button>
+</div>
 
-        <div class="product-card">
-            <img src="https://picsum.photos/300?1">
-            <h3>Premium Rice</h3>
-            <p>Rs. 2450</p>
-            <button>Add To Cart</button>
-        </div>
+<div class="card">
+<img src="https://picsum.photos/300?3">
+<h3>Smart Watch</h3>
+<p class="price">Rs. 3999</p>
+<button class="btn">Add To Cart</button>
+</div>
 
-        <div class="product-card">
-            <img src="https://picsum.photos/300?2">
-            <h3>Cooking Oil</h3>
-            <p>Rs. 1850</p>
-            <button>Add To Cart</button>
-        </div>
+<div class="card">
+<img src="https://picsum.photos/300?4">
+<h3>Headphones</h3>
+<p class="price">Rs. 3250</p>
+<button class="btn">Add To Cart</button>
+</div>
 
-    </div>
+</div>
 </section>
 
 <footer>
-    <h3>PakMart</h3>
-    <p>Quality You Trust, Service You Deserve.</p>
+© 2026 PakMart - Quality You Trust
 </footer>
-
-<script src="script.js"></script>
 
 </body>
 </html>
